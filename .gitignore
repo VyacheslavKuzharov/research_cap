@@ -25,4 +25,7 @@
 /config/database.yml
 /config/secrets.yml
 
+# Ignore local precompile
+public/assets
+
 .byebug_history
