@@ -21,6 +21,7 @@
 .ruby-gemset
 
 # Ignore application configuration
+/config/cloudinary.yml
 /config/database.yml
 /config/secrets.yml
 
