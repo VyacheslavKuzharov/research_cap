@@ -8,6 +8,8 @@ require 'capistrano/rvm'
 require 'capistrano/puma'
 install_plugin Capistrano::Puma  # Default puma tasks
 
+require 'capistrano/local_precompile'
+
 # Load the SCM plugin appropriate to your project:
 #
 # require "capistrano/scm/hg"
