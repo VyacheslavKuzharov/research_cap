@@ -1,1 +1,1 @@
-Just boilerplate for research projects
+Capistrano research project
