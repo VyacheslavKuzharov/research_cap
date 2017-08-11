@@ -18,10 +18,6 @@ set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, true  # Change to false when not using ActiveRecord
 
-set :precompile_env,  fetch(:rails_env) || :production
-set :assets_dir,      'public/assets'
-set :rsync_cmd,       'rsync -av --delete'
-
 ## Defaults:
 set :keep_releases, 2
 
