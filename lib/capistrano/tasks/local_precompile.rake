@@ -1,5 +1,5 @@
 # Clear existing task so we can replace it rather than "add" to it.
-Rake::Task["deploy:compile_assets"].clear
+Rake::Task['deploy:compile_assets'].clear
 
 namespace :deploy do
 
@@ -10,10 +10,9 @@ namespace :deploy do
     invoke 'deploy:assets:backup_manifest'
   end
 
-
   namespace :assets do
 
-    desc "Precompile assets locally and then rsync to web servers"
+    desc 'Precompile assets locally and then rsync to web servers'
     task :precompile_local do
       # compile assets locally
       run_locally do
@@ -21,7 +20,7 @@ namespace :deploy do
       end
 
       # rsync to each server
-      local_dir = "./public/assets/"
+      local_dir = './public/assets/'
       on roles( fetch(:assets_roles, [:web]) ) do
         # this needs to be done outside run_locally in order for host to exist
         remote_dir = "#{host.user}@#{host.hostname}:#{release_path}/public/assets/"
@@ -32,8 +31,5 @@ namespace :deploy do
       # clean up
       run_locally { execute "rm -rf #{local_dir}" }
     end
-
   end
-
-
 end
