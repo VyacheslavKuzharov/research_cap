@@ -1,0 +1,20 @@
+# Add configuration values here, as shown below.
+
+development:
+  POSTGRES_USER:
+  POSTGRES_PASSWORD:
+  DATABASE_HOST:
+  CLOUD_NAME:
+  CLOUDINARY_API_KEY:
+  CLOUDINARY_API_SECRET:
+
+production:
+  POSTGRES_USER:
+  POSTGRES_PASSWORD:
+  CLOUD_NAME:
+  CLOUDINARY_API_KEY:
+  CLOUDINARY_API_SECRET:
+
+#staging:
+#  POSTGRES_USER: deploy
+#  POSTGRES_PASSWORD: qwerty
