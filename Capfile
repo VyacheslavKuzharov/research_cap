@@ -9,6 +9,7 @@ require 'capistrano/puma'
 install_plugin Capistrano::Puma  # Default puma tasks
 
 require 'capistrano/rails/console'
+require 'capistrano/figaro'
 
 # Load the SCM plugin appropriate to your project:
 #
