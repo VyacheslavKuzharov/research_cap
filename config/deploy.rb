@@ -22,7 +22,7 @@ set :puma_init_active_record, true  # Change to false when not using ActiveRecor
 set :keep_releases, 2
 
 ## Linked Files & Directories (Default None):
-set :linked_files, %w{ config/database.yml config/secrets.yml config/cloudinary.yml }
+set :linked_files, %w{ config/database.yml config/secrets.yml config/cloudinary.yml config/application.yml }
 set :linked_dirs,  %w{ log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system }
 
 namespace :puma do
